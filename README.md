@@ -36,6 +36,8 @@ window.webkit.messagehandlers.<name>.postMessage('xxx');
 
 3、使用 WebViewJavaScriptBridge 开源库
 
+WebViewJavaScriptBridge 很好的解决了 JS 和 Native 通信的问题，并且使我们能更好的组织代码，其原理也是根据以上两种情况做了进一步封装。
+
 iOS 和 Android 对应的代码开源地址：
 
 [iOS WebViewJavascriptBridge](https://github.com/marcuswestin/WebViewJavascriptBridge)
@@ -44,15 +46,15 @@ iOS 和 Android 对应的代码开源地址：
 
 ### 本次源码（iOS WebViewJavascriptBridge）学习笔记全部记录在 docs 目录下。
 
-首先从会用开始
+[首先从会用开始]()
 
-iOS 初始化 WebViewJavascriptBridge
+[iOS 初始化 WebViewJavascriptBridge]()
 
-JavaScript 初始化 Bridge
+[JavaScript 初始化 Bridge]()
 
-JavaScript 主动调用 iOS 方法
+[JavaScript 主动调用 iOS 方法]()
 
-iOS 主动调用 JavaScript 方法
+[iOS 主动调用 JavaScript 方法]()
 
 ### 代码示例全部放在 demo 目录下，包括 JavaScript 和 Objective-C 初始化及具体调用方法。
 
