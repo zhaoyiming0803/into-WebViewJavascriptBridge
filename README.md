@@ -116,10 +116,10 @@ bridge 入口类，判断当前 WebView 的类型是 UIWebView 或 WKWebView，�
 
 [JavaScript 主动调用 iOS 方法](https://github.com/zymfe/into-WebViewJavascriptBridge/blob/master/docs/JavaScript%E4%B8%BB%E5%8A%A8%E8%B0%83%E7%94%A8iOS%20%E6%96%B9%E6%B3%95.md)
 
-[iOS 主动调用 JavaScript 方法](https://github.com/zymfe/into-WebViewJavascriptBridge/blob/master/docs/iOS%20%E4%B8%BB%E5%8A%A8%E8%B0%83%E7%94%A8JavaScript%E6%96%B9%E6%B3%95.md)
+[iOS 主动调用 JavaScript 方法](https://github.com/zymfe/into-WebViewJavascriptBridge/blob/master/docs/iOS%E4%B8%BB%E5%8A%A8%E8%B0%83%E7%94%A8JavaScript%E6%96%B9%E6%B3%95.md)
 
 ### 代码示例全部放在 demo 目录下，包括 JavaScript 和 Objective-C 初始化及具体调用方法。
 
 [bridge.js](https://github.com/zymfe/into-WebViewJavascriptBridge/blob/master/demo/bridge.js)
 
-[YMBridgeController.m](https://github.com/zymfe/into-WebViewJavascriptBridge/blob/master/demo/YMBridge.m)
+[YMBridgeController.m](https://github.com/zymfe/into-WebViewJavascriptBridge/blob/master/demo/YMBridgeController.m)
