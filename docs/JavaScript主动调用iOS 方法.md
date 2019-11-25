@@ -318,4 +318,6 @@ function _dispatchMessageFromObjC(messageJSON) {
 	}
 ```
 
+下节笔记：《[iOS主动调用JavaScript方法](https://github.com/zymfe/into-WebViewJavascriptBridge/blob/master/docs/iOS%E4%B8%BB%E5%8A%A8%E8%B0%83%E7%94%A8JavaScript%E6%96%B9%E6%B3%95.md)》
+
 ![JS调用Native流程图](https://github.com/zymfe/into-WebViewJavascriptBridge/blob/master/docs/images/JS%E8%B0%83%E7%94%A8Native%E6%B5%81%E7%A8%8B%E5%9B%BE.png)
