@@ -22,7 +22,7 @@
 window.location.href = 'Native自定义协议';
 ```
 
-- 使用 WebKit，苹果官方推荐安使用这种方式
+- 使用 WebKit，苹果官方推荐使用这种方式
 
 ``` javascript
 window.webkit.messagehandlers.<name>.postMessage('xxx');
