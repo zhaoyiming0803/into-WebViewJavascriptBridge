@@ -44,7 +44,7 @@ iOS 和 Android 对应的代码开源地址：
 
 ### 本次源码（iOS WebViewJavascriptBridge）学习笔记全部记录在 docs 目录下。
 
-WebViewJavascriptBridge 的使用方式
+首先从会用开始
 
 iOS 初始化 WebViewJavascriptBridge
 
