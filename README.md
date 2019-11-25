@@ -122,4 +122,4 @@ bridge 入口类，判断当前 WebView 的类型是 UIWebView 或 WKWebView，�
 
 [bridge.js](https://github.com/zymfe/into-WebViewJavascriptBridge/blob/master/demo/bridge.js)
 
-[YMBridge.m](https://github.com/zymfe/into-WebViewJavascriptBridge/blob/master/demo/YMBridge.m)
+[YMBridgeController.m](https://github.com/zymfe/into-WebViewJavascriptBridge/blob/master/demo/YMBridge.m)
