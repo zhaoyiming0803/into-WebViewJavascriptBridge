@@ -110,9 +110,9 @@ bridge 入口类，判断当前 WebView 的类型是 UIWebView 或 WKWebView，�
 
 ### 本次源码（iOS WebViewJavascriptBridge）学习笔记全部记录在 docs 目录下。
 
-[JavaScript 初始化 Bridge](https://github.com/zymfe/into-WebViewJavascriptBridge/blob/master/docs/JavaScript%E5%88%9D%E5%A7%8B%E5%8C%96Bridge.md)
-
 [iOS 初始化 WebViewJavascriptBridge](https://github.com/zymfe/into-WebViewJavascriptBridge/blob/master/docs/iOS%E5%88%9D%E5%A7%8B%E5%8C%96WebViewJavascriptBridge.md)
+
+[JavaScript 初始化 Bridge](https://github.com/zymfe/into-WebViewJavascriptBridge/blob/master/docs/JavaScript%E5%88%9D%E5%A7%8B%E5%8C%96Bridge.md)
 
 [JavaScript 主动调用 iOS 方法](https://github.com/zymfe/into-WebViewJavascriptBridge/blob/master/docs/JavaScript%E4%B8%BB%E5%8A%A8%E8%B0%83%E7%94%A8iOS%20%E6%96%B9%E6%B3%95.md)
 
