@@ -232,12 +232,12 @@ function _doSend(message, responseCallback) {
 
   // *** 重点在这里 ***
   // 前端修改 iframe 的 src 属性值，主动触发 Native 拦截（JS 调用 Native 方法的过程）
-  // 然后 Native 就又可以反过来执行 JS 方法了
+  // 然后 Native 就可以拿到 sendMessageQueue 中的数据，并解析
   messagingIframe.src = CUSTOM_PROTOCOL_SCHEME + '://' + QUEUE_HAS_MESSAGE;
 }
 ```
 
-这时，逻辑又回到 Native 拦截 URL 请求的那个方法中了。其实最终还是 webview 通过 stringByEvaluatingJavaScriptFromString 方法执行 sendMessageQueue 对象字符串。
+这时，逻辑又回到 Native 拦截 URL 请求的那个方法中了。其实最终还是 webview 执行stringByEvaluatingJavaScriptFromString 方法并传入 sendMessageQueue 对象字符串。
 
 然后来到 flushMessageQueue 方法（WebViewJavascriptBridgeBase），这个时候 responseId 有值了：
 
