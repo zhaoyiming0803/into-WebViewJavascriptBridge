@@ -69,8 +69,10 @@ self.bridge = [WebViewJavascriptBridge bridgeForWebView:self.webview];
 ``` objc
 - (void)reset {
     // 重置三个很重要的成员变量：startupMessageQueue 、responseCallbacks 和 _uniqueId
-    self.startupMessageQueue = [NSMutableArray array];
-    self.responseCallbacks = [NSMutableDictionary dictionary];
+    // 记住它们的数据类型
+    // 关于它们的作用，在 README 中介绍 WebViewJavaScriptBridge 目录结构 时已说明
+    self.startupMessageQueue = [NSMutableArray array]; // 数组
+    self.responseCallbacks = [NSMutableDictionary dictionary]; // 字典
     _uniqueId = 0;
 }
 ```
@@ -116,3 +118,5 @@ self.bridge = [WebViewJavascriptBridge bridgeForWebView:self.webview];
 从以上代码可知，Native 获取 JS 发送的消息的方式，就是拦截URL请求。
 
 下节笔记学习[JavaScript初始化Bridge](https://github.com/zymfe/into-WebViewJavascriptBridge/blob/master/docs/JavaScript%E5%88%9D%E5%A7%8B%E5%8C%96Bridge.md)
+
+![bridge初始化流程图](https://github.com/zymfe/into-WebViewJavascriptBridge/blob/master/docs/images/bridge%E5%88%9D%E5%A7%8B%E5%8C%96%E6%B5%81%E7%A8%8B%E5%9B%BE.png)
