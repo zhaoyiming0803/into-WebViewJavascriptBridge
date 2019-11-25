@@ -53,20 +53,29 @@ function initIOSBridge(callback) {
   }, 0);
 }
 
-export default {
-  call(name, data, callback) {
-    if (isiOS) {
+const call = (function () {
+  if (isiOS) {
+    return function (name, data, callback) {
       initIOSBridge(bridge => bridge.callHandler(name, data, callback));
-    } else {
-      window.WebViewJavascriptBridge.callHandler(name, data, callback);
-    }
-  },
-
-  register (name, callback) {
-    if (isiOS) {
-      initIOSBridge(bridge => bridge.registerHandler(name, callback));
-    } else {
-      window.WebViewJavascriptBridge.registerHandler(name, callback);
     }
   }
+  return function (name, data, callback) {
+    window.WebViewJavascriptBridge.callHandler(name, data, callback);
+  }
+})();
+
+const register = (function () {
+  if (isiOS) {
+    return function (name, callback) {
+      initIOSBridge(bridge => bridge.registerHandler(name, callback));
+    }
+  }
+  return function (name, callback) {
+    window.WebViewJavascriptBridge.registerHandler(name, callback);
+  }
+})();
+
+export default {
+  call,
+  register
 }
