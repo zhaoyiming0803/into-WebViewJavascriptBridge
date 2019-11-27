@@ -23,7 +23,15 @@ registerHandler 方法在 WebViewJavascriptBridge.m 文件中
 window.WebViewJavascriptBridge.callHandler(handlerName, data, callback)
 ```
 
-在笔记《[iOS初始化WebViewJavascriptBridge](https://github.com/zymfe/into-WebViewJavascriptBridge/blob/master/docs/iOS%E5%88%9D%E5%A7%8B%E5%8C%96WebViewJavascriptBridge.md)》中提到过，Native 执行 [_base injectJavascriptFile] 方法将 WebViewJavascriptBridge_JS 代码注入到 webview 中，所以 window 全局对象上就有了 WebViewJavascriptBridge。
+在笔记《[iOS初始化WebViewJavascriptBridge](https://github.com/zymfe/into-WebViewJavascriptBridge/blob/master/docs/iOS%E5%88%9D%E5%A7%8B%E5%8C%96WebViewJavascriptBridge.md)》中提到过，Native 执行 [_base injectJavascriptFile] 方法将 WebViewJavascriptBridge_JS 代码注入到 webview 中，所以 window 全局对象上就有了 WebViewJavascriptBridge，即：
+
+``` javascript
+window.WebViewJavascriptBridge = {
+  callHandler,
+  registerHandler,
+  // ... 其他方法
+};
+```
 
 所以看下 WebViewJavascriptBridge_JS.m 文件，找到 callHandler 方法：
 
