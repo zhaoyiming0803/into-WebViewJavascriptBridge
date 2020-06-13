@@ -117,6 +117,6 @@ self.bridge = [WebViewJavascriptBridge bridgeForWebView:self.webview];
 
 从以上代码可知，Native 获取 JS 发送的消息的方式，就是拦截URL请求。
 
-下节笔记学习[JavaScript初始化Bridge](https://github.com/zymfe/into-WebViewJavascriptBridge/blob/master/docs/JavaScript%E5%88%9D%E5%A7%8B%E5%8C%96Bridge.md)
+下节笔记学习[JavaScript初始化Bridge](https://github.com/zhaoyiming0803/into-WebViewJavascriptBridge/blob/master/docs/JavaScript%E5%88%9D%E5%A7%8B%E5%8C%96Bridge.md)
 
-![bridge初始化流程图](https://github.com/zymfe/into-WebViewJavascriptBridge/blob/master/docs/images/bridge%E5%88%9D%E5%A7%8B%E5%8C%96%E6%B5%81%E7%A8%8B%E5%9B%BE.png)
+![bridge初始化流程图](https://github.com/zhaoyiming0803/into-WebViewJavascriptBridge/blob/master/docs/images/bridge%E5%88%9D%E5%A7%8B%E5%8C%96%E6%B5%81%E7%A8%8B%E5%9B%BE.png)

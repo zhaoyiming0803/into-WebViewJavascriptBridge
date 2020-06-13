@@ -52,7 +52,7 @@ JS 和 Native 需要互相调用，那么各自都需要做到两点：
 
 2、调用对方已注册的方法
 
-![WebViewJavaScriptBridge交互图](https://github.com/zymfe/into-WebViewJavascriptBridge/blob/master/docs/images/WebViewJavaScriptBridge%E4%BA%A4%E4%BA%92%E5%9B%BE.png)
+![WebViewJavaScriptBridge交互图](https://github.com/zhaoyiming0803/into-WebViewJavascriptBridge/blob/master/docs/images/WebViewJavaScriptBridge%E4%BA%A4%E4%BA%92%E5%9B%BE.png)
 
 iOS（WKWebView）对外暴露的API：
 
@@ -110,16 +110,16 @@ bridge 入口类，判断当前 WebView 的类型是 UIWebView 或 WKWebView，�
 
 ### 本次源码（iOS WebViewJavascriptBridge）学习笔记全部记录在 docs 目录下。
 
-[iOS 初始化 WebViewJavascriptBridge](https://github.com/zymfe/into-WebViewJavascriptBridge/blob/master/docs/iOS%E5%88%9D%E5%A7%8B%E5%8C%96WebViewJavascriptBridge.md)
+[iOS 初始化 WebViewJavascriptBridge](https://github.com/zhaoyiming0803/into-WebViewJavascriptBridge/blob/master/docs/iOS%E5%88%9D%E5%A7%8B%E5%8C%96WebViewJavascriptBridge.md)
 
-[JavaScript 初始化 Bridge](https://github.com/zymfe/into-WebViewJavascriptBridge/blob/master/docs/JavaScript%E5%88%9D%E5%A7%8B%E5%8C%96Bridge.md)
+[JavaScript 初始化 Bridge](https://github.com/zhaoyiming0803/into-WebViewJavascriptBridge/blob/master/docs/JavaScript%E5%88%9D%E5%A7%8B%E5%8C%96Bridge.md)
 
-[JavaScript 主动调用 iOS 方法](https://github.com/zymfe/into-WebViewJavascriptBridge/blob/master/docs/JavaScript%E4%B8%BB%E5%8A%A8%E8%B0%83%E7%94%A8iOS%20%E6%96%B9%E6%B3%95.md)
+[JavaScript 主动调用 iOS 方法](https://github.com/zhaoyiming0803/into-WebViewJavascriptBridge/blob/master/docs/JavaScript%E4%B8%BB%E5%8A%A8%E8%B0%83%E7%94%A8iOS%20%E6%96%B9%E6%B3%95.md)
 
-[iOS 主动调用 JavaScript 方法](https://github.com/zymfe/into-WebViewJavascriptBridge/blob/master/docs/iOS%E4%B8%BB%E5%8A%A8%E8%B0%83%E7%94%A8JavaScript%E6%96%B9%E6%B3%95.md)
+[iOS 主动调用 JavaScript 方法](https://github.com/zhaoyiming0803/into-WebViewJavascriptBridge/blob/master/docs/iOS%E4%B8%BB%E5%8A%A8%E8%B0%83%E7%94%A8JavaScript%E6%96%B9%E6%B3%95.md)
 
 ### 代码示例全部放在 demo 目录下，包括 JavaScript 和 Objective-C 初始化及具体调用方法。
 
-[bridge.js](https://github.com/zymfe/into-WebViewJavascriptBridge/blob/master/demo/bridge.js)
+[bridge.js](https://github.com/zhaoyiming0803/into-WebViewJavascriptBridge/blob/master/demo/bridge.js)
 
-[YMBridgeController.m](https://github.com/zymfe/into-WebViewJavascriptBridge/blob/master/demo/YMBridgeController.m)
+[YMBridgeController.m](https://github.com/zhaoyiming0803/into-WebViewJavascriptBridge/blob/master/demo/YMBridgeController.m)

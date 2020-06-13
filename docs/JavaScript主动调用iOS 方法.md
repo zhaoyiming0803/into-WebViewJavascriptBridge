@@ -23,7 +23,7 @@ registerHandler 方法在 WebViewJavascriptBridge.m 文件中
 window.WebViewJavascriptBridge.callHandler(handlerName, data, callback)
 ```
 
-在笔记《[iOS初始化WebViewJavascriptBridge](https://github.com/zymfe/into-WebViewJavascriptBridge/blob/master/docs/iOS%E5%88%9D%E5%A7%8B%E5%8C%96WebViewJavascriptBridge.md)》中提到过，Native 执行 [_base injectJavascriptFile] 方法将 WebViewJavascriptBridge_JS 代码注入到 webview 中，所以 window 全局对象上就有了 WebViewJavascriptBridge，即：
+在笔记《[iOS初始化WebViewJavascriptBridge](https://github.com/zhaoyiming0803/into-WebViewJavascriptBridge/blob/master/docs/iOS%E5%88%9D%E5%A7%8B%E5%8C%96WebViewJavascriptBridge.md)》中提到过，Native 执行 [_base injectJavascriptFile] 方法将 WebViewJavascriptBridge_JS 代码注入到 webview 中，所以 window 全局对象上就有了 WebViewJavascriptBridge，即：
 
 ``` javascript
 window.WebViewJavascriptBridge = {
@@ -326,6 +326,6 @@ function _dispatchMessageFromObjC(messageJSON) {
 	}
 ```
 
-下节笔记：《[iOS主动调用JavaScript方法](https://github.com/zymfe/into-WebViewJavascriptBridge/blob/master/docs/iOS%E4%B8%BB%E5%8A%A8%E8%B0%83%E7%94%A8JavaScript%E6%96%B9%E6%B3%95.md)》
+下节笔记：《[iOS主动调用JavaScript方法](https://github.com/zhaoyiming0803/into-WebViewJavascriptBridge/blob/master/docs/iOS%E4%B8%BB%E5%8A%A8%E8%B0%83%E7%94%A8JavaScript%E6%96%B9%E6%B3%95.md)》
 
-![JS调用Native流程图](https://github.com/zymfe/into-WebViewJavascriptBridge/blob/master/docs/images/JS%E8%B0%83%E7%94%A8Native%E6%B5%81%E7%A8%8B%E5%9B%BE.png)
+![JS调用Native流程图](https://github.com/zhaoyiming0803/into-WebViewJavascriptBridge/blob/master/docs/images/JS%E8%B0%83%E7%94%A8Native%E6%B5%81%E7%A8%8B%E5%9B%BE.png)

@@ -268,4 +268,4 @@ function _doSend(message, responseCallback) {
 
 至此，Native 主动调用 JS 方法的整个逻辑就走完了。
 
-![Native调用JS流程图](https://github.com/zymfe/into-WebViewJavascriptBridge/blob/master/docs/images/Native%E8%B0%83%E7%94%A8JS%E6%B5%81%E7%A8%8B%E5%9B%BE.png)
+![Native调用JS流程图](https://github.com/zhaoyiming0803/into-WebViewJavascriptBridge/blob/master/docs/images/Native%E8%B0%83%E7%94%A8JS%E6%B5%81%E7%A8%8B%E5%9B%BE.png)
